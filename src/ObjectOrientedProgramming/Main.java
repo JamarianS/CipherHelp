@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class Main {
 
-    public void main(String[] args){
+    public void main(String[] args){ //add static
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a string: ");
         String message = input.nextLine();
         System.out.println("Enter 1 for this message to be Encrypted or 2 if you want it Decrypted: ");
         int choice = input.nextInt();
-
+        //your program must ask shift value
         CaesarCipher cc = new CaesarCipher();
 
         if(choice == 1){
